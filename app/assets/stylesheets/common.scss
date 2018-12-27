@@ -1,0 +1,25 @@
+@import "bootstrap";
+
+
+// cambiar por un colors.scss
+$green: green;
+$grey: grey;
+$blue: blue;
+$red: red;
+
+.green{
+	background-color: $green;
+}
+.green-text{
+	color: $green;
+}
+.red{
+	background-color: $red;
+}
+.red-text{
+	color: $red;
+}
+
+
+//fin colors.scss
+
