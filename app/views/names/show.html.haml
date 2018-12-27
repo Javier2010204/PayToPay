@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Pricing:
+  = @name.pricing
+%p
+  %b Description:
+  = @name.description
+%p
+  %b User:
+  = @name.user
+
+= link_to 'Edit', edit_name_path(@name)
+\|
+= link_to 'Back', names_path

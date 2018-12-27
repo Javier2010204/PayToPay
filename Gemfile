@@ -31,6 +31,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'bootstrap-material-design'
 gem 'haml-rails'
+gem 'paperclip'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
