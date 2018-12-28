@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :names
   devise_for :users
+  resources :products
 
   authenticated :user do
   	root 'welcome#index'

@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  pricing: 9.99
+  name: MyString
   description: MyText
+  pricing: 9.99
   user: one
 
 two:
-  pricing: 9.99
+  name: MyString
   description: MyText
+  pricing: 9.99
   user: two

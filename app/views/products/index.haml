@@ -1,0 +1,14 @@
+%h1 Productos
+%table
+	%thead
+		%tr
+			%th Nombre
+			%th Descripcion
+			%th Precio
+			%th Acciones
+	%tbody
+		%tr
+		-@products.each do |product|
+			%td= product.name
+			%td= product.description
+			%td= product.pricing
