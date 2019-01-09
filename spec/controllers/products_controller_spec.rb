@@ -28,9 +28,11 @@ RSpec.describe ProductsController, type: :controller do
 
 	describe "GET #show" do
 		it "assigns the requested product as @product" do
-			product = Product.create! valid_attributes
-			get :show, {id: product.to_param}
-			expect(assigns(:product)).to eq(product)
+		end
+	end
+
+	describe "GET #new" do 
+		it "assings a new product as @product" do 
 		end
 	end
 
