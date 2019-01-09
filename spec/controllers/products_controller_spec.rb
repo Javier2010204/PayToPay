@@ -17,4 +17,6 @@ RSpec.describe ProductsController, type: :controller do
 		}
 	}
 
+	#probar todos los metodos aqui
+
 end
