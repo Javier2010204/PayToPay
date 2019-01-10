@@ -18,11 +18,12 @@ class ProductsController < ApplicationController
 		@product = current_user.products.new(product_params)
 		respond_to do |format|
 			if @product.save
-				format.html{redirect_to @product, notice: "el producto se creo exitosamente"}
-			else
-				format.html{render :new, "hubo un error al crear el producto"}
-				format.json{render json:@product.errors, status: :unprocessable_entity}
-			end
+        		format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        		format.json { render :show, status: :created, location: @product }
+      		else
+        		format.html { render :new }
+        		format.json { render json: @product.errors, status: :unprocessable_entity }
+      		end
 		end
 	end
 
@@ -52,7 +53,7 @@ class ProductsController < ApplicationController
 
 	private
 
-		def products_params
+		def product_params
 			params.require(:product).permit(:name, :description, :pricing)
 		end
 
