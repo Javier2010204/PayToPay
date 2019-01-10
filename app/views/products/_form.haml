@@ -1,17 +1,3 @@
-=form_for @product do |f|
-	-if @product.errors.any?
-		%h3="#{pluralize(@product.errors.count, "error")} hicieron que no se pudiera guardar el post"
-		%ul
-			-@product.errors.full_messages.each do |message|
-				%li= message
-	.field
-		=f.label "Nombre"
-		=f.text_field :name
-	.field
-		=f.label "Precio"
-		=f.text_field :pricing
-	.field
-		=f.label "Descripción"
-		=f.text_field :description
-	.actions
-		=f.submit "Gurdar"
+= form_for @product, builder: BootstrapFormBuilder do |f|
+	= f.text_field :name
+	= f.text_field :pricing
