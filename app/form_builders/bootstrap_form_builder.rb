@@ -5,13 +5,15 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
 	[:text_field,:text_area,:email_field,:number_field,:url_field].each do |metodo|
 		define_method metodo do |name, *args|
 			options = args.extract_options!
+			aditional_classes = "form-control floating-label"
 			if options.has_key?(:class)
-				options[:class] += "form-control"
+				options[:class] += aditional_classes
 			else
-				options[:class] = "form-control"
+				options[:class] = aditional_classes
 			end
+			options[:placeholder] = name.capitalize 
 			content_tag :div, class:"form-group" do 
-				content_tag(:label, name, name:name) + super(name, options)
+				super(name, options)
 			end
 		end
 	end

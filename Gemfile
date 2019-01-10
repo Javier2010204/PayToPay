@@ -33,6 +33,7 @@ gem 'bootstrap-material-design'
 gem 'haml-rails'
 gem 'paperclip'
 gem 'rails-controller-testing'
+gem 'jquery-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
