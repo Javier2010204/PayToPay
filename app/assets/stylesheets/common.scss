@@ -2,16 +2,36 @@
 
 
 // cambiar por un colors.scss
-$green: green;
-$grey: grey;
-$blue: blue;
-$red: red;
+$green: #16a085;
+$grey: #5A6576;
+$other-grey: #e7ecee;
+$blue: #058cc5;
+$red: #d2527f;
+$teal: #009688;
+$light-blue: #3498DB;
 
+/*texto*/
+
+.bold{
+	font-weight: bold;
+}
+.grey{
+	background-color: $grey;
+}
+.grey-text{
+	color: $grey;
+}
+.teal-text{
+	color: $teal;
+}
 .green{
 	background-color: $green;
 }
 .green-text{
 	color: $green;
+}
+.blue-text{
+	color: $blue;
 }
 .red{
 	background-color: $red;
@@ -25,7 +45,37 @@ $red: red;
 	padding: 10px 15px;
 }
 
+.big-padding{
+	padding: 15px;
+}
+
 .no-float{
 	float:none;
+}
+
+.inline-block{
+	float: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+/* Tamaños */
+.small{
+	font-size: 12px;
+}
+.medium{
+	font-size: 1.5em;
+}
+.normal{
+	font-size: 1.2em;
+}
+.big{
+	font-size: 3em;
+}
+.bigger{
+	font-size: 4em;
+}
+.ultra-big{
+	font-size: 7em;
 }
 
