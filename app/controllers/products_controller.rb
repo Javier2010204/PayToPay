@@ -7,7 +7,9 @@ class ProductsController < ApplicationController
 	end
 
 	def show
-
+		if user_signed_in? && current_user == @product.user
+			render :admin
+		end
 	end
 
 	def new
