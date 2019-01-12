@@ -10,9 +10,8 @@
 
   <body>
     <div style="<%= 'display:none' if alert.nil? && notice.nil? %>">
-      
+      <p><%= alert %><%= notice%></p>
     </div>
-    <p></p>
     <%= yield %>
   </body>
 </html>

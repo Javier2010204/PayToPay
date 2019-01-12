@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
 	end
 
 	def show
-		if user_signed_in? && current_user == @product.user
+		if user_signed_in? && current_user == @product.user && !params.has_key?(:client)
 			render :admin
 		end
 	end

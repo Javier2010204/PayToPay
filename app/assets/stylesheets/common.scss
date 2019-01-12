@@ -15,11 +15,17 @@ $light-blue: #3498DB;
 .bold{
 	font-weight: bold;
 }
+.white-text{
+	color: #fff;
+}
 .grey{
 	background-color: $grey;
 }
 .grey-text{
 	color: $grey;
+}
+.other-grey{
+	background-color: $other-grey;
 }
 .teal-text{
 	color: $teal;
