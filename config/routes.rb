@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :products
-  resources :attachments, only:[:new,:create,:destroy]
+  resources :attachments, only:[:new,:create,:destroy,:show]
 
   authenticated :user do
   	root 'welcome#index'
