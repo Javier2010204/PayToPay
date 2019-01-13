@@ -4,7 +4,6 @@ class AttachmentsController < ApplicationController
   before_action :set_product, only:[:destroy]
   before_action :authenticate_owner!, except: :show
 
-  #access_token$sandbox$fbchnmcxpc6h7329$ae06975e62201e33d2fee3fe0a181d33
   def show 
     send_file @attachment.archivo.path
   end
