@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   belongs_to :user
+  has_many :attachments
 
   validates_presence_of :name, :pricing, :user
   validates :pricing, numericality: { greater_than: 0}

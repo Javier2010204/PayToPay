@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
 	def show
 		if user_signed_in? && current_user == @product.user && !params.has_key?(:client)
+			@attachment = Attachment.new
 			render :admin
 		end
 	end

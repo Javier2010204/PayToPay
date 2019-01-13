@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_28_162725) do
+ActiveRecord::Schema.define(version: 2019_01_12_173012) do
+
+  create_table "attachments", force: :cascade do |t|
+    t.integer "product_id"
+    t.string "archivo_file_name"
+    t.string "archivo_content_type"
+    t.bigint "archivo_file_size"
+    t.datetime "archivo_updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_attachments_on_product_id"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
