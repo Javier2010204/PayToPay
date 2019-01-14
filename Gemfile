@@ -34,6 +34,7 @@ gem 'haml-rails'
 gem 'paperclip'
 gem 'rails-controller-testing'
 gem 'jquery-rails'
+gem 'paypal-sdk-rest'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -50,6 +51,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+
+  gem 'annotate'
 end
 
 group :development do
