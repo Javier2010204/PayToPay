@@ -18,6 +18,9 @@
 class Product < ApplicationRecord
   belongs_to :user
   has_many :attachments
+  has_many :in_shopping_carts
+  has_one :shopping_cart, through: :in_shopping_carts
+
 
   validates_presence_of :name, :pricing, :user
   validates :pricing, numericality: { greater_than: 0}

@@ -1,0 +1,16 @@
+%header
+    %nav.black
+        %ul.no-list.no-padding.text-center
+            %li.col-md-4.inline-block.tall-padding.white-text
+                -if user_signed_in?
+                    =link_to root_path, class:"right-space white-text" do
+                        Mi tienda
+                    =link_to "", class:"right-space white-text" do
+                        Ordenes
+                    =link_to "", class:"right-space white-text" do
+                        Descuentos
+            %li.col-md-4.inline-block.text-center
+                =image_tag "loading.png", height:"25px"
+            %li.col-md-4.inline-block
+                =link_to carrito_path, class:"white-text" do
+                    Mi Carrito

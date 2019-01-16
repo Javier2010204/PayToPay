@@ -12,6 +12,7 @@
     <div style="<%= 'display:none' if alert.nil? && notice.nil? %>">
       <p><%= alert %><%= notice%></p>
     </div>
+    <%= render "partials/nav"%>
     <%= yield %>
   </body>
 </html>

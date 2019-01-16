@@ -42,13 +42,29 @@ $light-blue: #3498DB;
 .blue-text{
 	color: $blue;
 }
+.black{
+	background-color: #000;
+}
 .red{
 	background-color: $red;
 }
 .red-text{
 	color: $red;
 }
+
 //fin colors.scss
+
+.top-space{
+	margin-top: 1em;
+}
+
+.right-space{
+	margin-right: 1em;
+}
+
+.tall-padding{
+	padding: 10px 5px;
+}
 
 .large-padding{
 	padding: 10px 15px;
@@ -95,4 +111,5 @@ $light-blue: #3498DB;
 .ultra-big{
 	font-size: 7em;
 }
+
 
