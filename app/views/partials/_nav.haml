@@ -12,7 +12,6 @@
             %li.col-md-4.inline-block.text-center
                 =image_tag "loading.png", height:"25px"
             %li.col-md-4.inline-block.white-text
-                Carrito
-            %li.col-md-4.inline-block.white-text
-                hay que terminar las relaciones en la BD
+                =link_to carrito_path, class: "white-text" do
+                    Carrito 
                 
