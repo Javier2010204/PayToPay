@@ -14,4 +14,7 @@
             %li.col-md-4.inline-block.white-text
                 =link_to carrito_path, class: "white-text" do
                     Carrito
+                    (
+                    =@shopping_cart.products.count
+                    )
                 
