@@ -9,6 +9,7 @@
                         Ordenes
                     =link_to "", class:"right-space white-text" do
                         Descuentos
+                    =link_to "cerrar sesion", destroy_user_session_path, method: :delete, class: "right-space white-text"
             %li.col-md-4.inline-block.text-center
                 =image_tag "loading.png", height:"25px"
             %li.col-md-4.inline-block.white-text
@@ -17,4 +18,5 @@
                     (
                     =@shopping_cart.products.count
                     )
+                    =@shopping_cart.id
                 

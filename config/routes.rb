@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :products
   resources :attachments, only:[:new,:create,:destroy,:show]
-  resources :in_shopping_cart, only: [:create, :destroy]
+  resources :in_shopping_carts, only: [:create, :destroy]
 
   get "/carrito", to: "shopping_carts#show"
 
